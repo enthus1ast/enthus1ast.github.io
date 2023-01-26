@@ -7,7 +7,7 @@ function displayText() {
 }
 
 function encode(str) {
-  return location.origin + location.pathname + "index.html?text=" + btoa(encodeURI(str))
+  return location.origin + location.pathname + "?text=" + btoa(encodeURI(str))
 }
 
 
