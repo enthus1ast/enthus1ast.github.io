@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on blog.code0.xyz</title>
+    <link>https://blog.code0.xyz/tags/</link>
+    <description>Recent content in Tags on blog.code0.xyz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Mar 2023 16:27:43 +0200</lastBuildDate><atom:link href="https://blog.code0.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux</title>
+      <link>https://blog.code0.xyz/tags/linux/</link>
+      <pubDate>Mon, 27 Mar 2023 16:27:43 +0200</pubDate>
+      
+      <guid>https://blog.code0.xyz/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wireguard</title>
+      <link>https://blog.code0.xyz/tags/wireguard/</link>
+      <pubDate>Mon, 27 Mar 2023 16:27:43 +0200</pubDate>
+      
+      <guid>https://blog.code0.xyz/tags/wireguard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>authentik</title>
+      <link>https://blog.code0.xyz/tags/authentik/</link>
+      <pubDate>Mon, 27 Mar 2023 15:49:26 +0200</pubDate>
+      
+      <guid>https://blog.code0.xyz/tags/authentik/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>grist</title>
+      <link>https://blog.code0.xyz/tags/grist/</link>
+      <pubDate>Mon, 27 Mar 2023 15:49:26 +0200</pubDate>
+      
+      <guid>https://blog.code0.xyz/tags/grist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sso</title>
+      <link>https://blog.code0.xyz/tags/sso/</link>
+      <pubDate>Mon, 27 Mar 2023 15:49:26 +0200</pubDate>
+      
+      <guid>https://blog.code0.xyz/tags/sso/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

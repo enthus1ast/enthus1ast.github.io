@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>gristImageMap</title>
+  <script src="https://docs.getgrist.com/grist-plugin-api.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+  <script src="script.js"></script>
+
+</head>
+<body>
+
+  <div class="settings">
+    <ul>
+      <li><input type="checkbox" name="moveEnabled" id="moveEnabled"><label for="moveEnabled">moveEnabled</label> </li>
+      <li><input type="checkbox" name="scrollIntoView" id="scrollIntoView" checked><label for="scrollIntoView">scrollIntoView</label> </li>
+      <li><input type="checkbox" name="showDetails" id="showDetails" checked><label for="showDetails">showDetails</label> </li>
+      <li><button id="resetZoom">Reset Zoom</button></li>
+    </ul>
+  </div>
+
+  <div class="details" id="details">
+    <div id="detailsControls">
+      <button id="detailsClose">[X]</button>
+    </div>
+    <div id="detailsTitle"></div>
+    <div id="detailsText"></div>
+  </div>
+
+  <div class="container" id="container" data-x="0" data-y="0" data-scale="1" >
+    <img alt="Background Image" id="backgroundImage">
+  </div>
+
+</body>
+</html>
+

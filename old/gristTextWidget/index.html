@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gristTextWidget</title>
+  <script src="script.js"></script>
+</head>
+<body>
+<div id="text">
+  <h1>gristTextWidget</h1>
+  <h2>Usage</h2>
+  <p>Type your text in the first box.</p>
+  <p>The second box generates a link that you can copy and paste as the widget url to display the text</p>
+
+  <p>
+    For example:
+  </p>
+
+  <p>
+    <code>
+      http://example.org/index.html?text=U29tZSUyMHRleHQlMjB0byUyMGRpc3BsYXklMjAmJTIwc29tZSUyMG1vcmUh
+    </code>
+  </p>
+
+<textarea name="in" id="in" cols="30" rows="10"></textarea><br>
+<textarea name="out" id="out" cols="30" rows="10"></textarea><br><br>
+<a style="line-break: anywhere;" href="" id="outlink"></a><br>
+</div>
+<script>displayText()</script>
+</body>
+</html>

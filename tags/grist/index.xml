@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>grist on blog.code0.xyz</title>
+    <link>https://blog.code0.xyz/tags/grist/</link>
+    <description>Recent content in grist on blog.code0.xyz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Mar 2023 15:49:26 +0200</lastBuildDate><atom:link href="https://blog.code0.xyz/tags/grist/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wireguard MTU on linux</title>
+      <link>https://blog.code0.xyz/posts/wireguard-mtu-on-linux/</link>
+      <pubDate>Mon, 27 Mar 2023 15:49:26 +0200</pubDate>
+      
+      <guid>https://blog.code0.xyz/posts/wireguard-mtu-on-linux/</guid>
+      <description>I encountered an issue with wireguard vpn + grist + authentik sso via SAML.
+When i want to login, the page hang. There where no signs of the request in the nginx servers logfiles nor in grist&amp;rsquo;s and authentik&amp;rsquo;s log output.
+After a few hours (sic) of hunting, i found that the issue is the default MTU assigned by wg-quick being too large.
+I tried a few MTU sizes and found that i had to lower it to 1403:</description>
+    </item>
+    
+  </channel>
+</rss>

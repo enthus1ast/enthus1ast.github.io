@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog.code0.xyz</title>
+    <link>https://blog.code0.xyz/</link>
+    <description>Recent content on blog.code0.xyz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Mar 2023 16:27:43 +0200</lastBuildDate><atom:link href="https://blog.code0.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GristWidgets</title>
+      <link>https://blog.code0.xyz/gristwidgets/</link>
+      <pubDate>Mon, 27 Mar 2023 17:59:07 +0200</pubDate>
+      
+      <guid>https://blog.code0.xyz/gristwidgets/</guid>
+      <description>Static links to my public grist widgets:
+gristImageMap custom widgets:  gristImageMap (always the newest version) gristImageMap_v0.2.0 gristImageMap_v0.1.0  gristTextWidget custom widgets:  gristTextWidget  gristBox custom widgets:  gristBox_v1.0.0  </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://blog.code0.xyz/about/</link>
+      <pubDate>Mon, 27 Mar 2023 17:38:23 +0200</pubDate>
+      
+      <guid>https://blog.code0.xyz/about/</guid>
+      <description>I&amp;rsquo;m David Krause, a programmer and administrator from germany.
+A few random things i&amp;rsquo;m interested in:
+ Nim Lang Gamedev Network programming Grist Parsers + lexers and template engines (nimja) Linux  Contact me on:
+ github Matrix: @sn0re:matrix.code0.xyz  </description>
+    </item>
+    
+    <item>
+      <title>Wireguard Linux Shadowed Endpoint</title>
+      <link>https://blog.code0.xyz/posts/wireguard-linux-shadowed-gateway/</link>
+      <pubDate>Mon, 27 Mar 2023 16:27:43 +0200</pubDate>
+      
+      <guid>https://blog.code0.xyz/posts/wireguard-linux-shadowed-gateway/</guid>
+      <description>I create wireguard configurations for ~120 users via a small nim application. Its easy and works beautifully on windows and macos with the official wireguard client for those platforms.
+The same config, does not work on linux.
+When enabled it basically broke my network.
+The issue was that i added a whole subnet to the AllowedIPs that also contained the endpoint&amp;rsquo;s ip. Interestingly this worked on windows and macos but not on linux.</description>
+    </item>
+    
+    <item>
+      <title>Wireguard MTU on linux</title>
+      <link>https://blog.code0.xyz/posts/wireguard-mtu-on-linux/</link>
+      <pubDate>Mon, 27 Mar 2023 15:49:26 +0200</pubDate>
+      
+      <guid>https://blog.code0.xyz/posts/wireguard-mtu-on-linux/</guid>
+      <description>I encountered an issue with wireguard vpn + grist + authentik sso via SAML.
+When i want to login, the page hang. There where no signs of the request in the nginx servers logfiles nor in grist&amp;rsquo;s and authentik&amp;rsquo;s log output.
+After a few hours (sic) of hunting, i found that the issue is the default MTU assigned by wg-quick being too large.
+I tried a few MTU sizes and found that i had to lower it to 1403:</description>
+    </item>
+    
+  </channel>
+</rss>
