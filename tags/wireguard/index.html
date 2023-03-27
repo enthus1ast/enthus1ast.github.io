@@ -159,7 +159,7 @@ The issue was that i added a whole subnet to the AllowedIPs that also contained 
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       I encountered an issue with wireguard vpn + grist + authentik sso via SAML.
-When i want to login, the page hang. There where no signs of the request in the nginx servers logfiles nor in grist&rsquo;s and authentik&rsquo;s log output.
+When i want to login, the page hang. There where no signs of the request in the nginx servers log files nor in grist&rsquo;s and authentik&rsquo;s log output.
 After a few hours (sic) of hunting, i found that the issue is the default MTU assigned by wg-quick being too large.
 I tried a few MTU sizes and found that i had to lower it to 1403:
     </div>
