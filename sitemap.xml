@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.code0.xyz/</loc>
+    <lastmod>2023-03-27T18:44:03+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.code0.xyz/tags/nim/</loc>
+    <lastmod>2023-03-27T18:44:03+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.code0.xyz/posts/nimja/</loc>
+    <lastmod>2023-03-27T18:44:03+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.code0.xyz/tags/nimja/</loc>
+    <lastmod>2023-03-27T18:44:03+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.code0.xyz/posts/</loc>
+    <lastmod>2023-03-27T18:44:03+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.code0.xyz/tags/</loc>
+    <lastmod>2023-03-27T18:44:03+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://blog.code0.xyz/gristwidgets/</loc>
     <lastmod>2023-03-27T17:59:07+02:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -12,22 +42,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://blog.code0.xyz/</loc>
-    <lastmod>2023-03-27T16:27:43+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://blog.code0.xyz/tags/linux/</loc>
-    <lastmod>2023-03-27T16:27:43+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.code0.xyz/posts/</loc>
-    <lastmod>2023-03-27T16:27:43+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.code0.xyz/tags/</loc>
     <lastmod>2023-03-27T16:27:43+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
