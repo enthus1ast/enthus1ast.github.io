@@ -25,8 +25,7 @@ gristImageMap custom widgets:  gristImageMap (always the newest version) gristIm
       <guid>https://blog.code0.xyz/about/</guid>
       <description>I&amp;rsquo;m David Krause, a programmer and administrator from germany.
 A few random things i&amp;rsquo;m interested in:
- Nim Lang Gamedev Network programming Grist Parsers + lexers and template engines (nimja) Linux  Contact me on:
- github Matrix: @sn0re:matrix.code0.xyz  </description>
+ Nim Lang My main programming language. Gamedev  chromeTrip unsinkable pong)   Network programming  nimSocks a socks proxy server libch4t an irc server   Grist Parsers, Lexers and template engines  nimja A compiled template engine, similar to twig or jinja   Linux and Windows administration System programming and hacking  nimHook A small naive hooking library   Data herding  Crawlers Databases    Contact me on:</description>
     </item>
     
     <item>
