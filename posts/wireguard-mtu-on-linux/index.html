@@ -48,7 +48,7 @@ When i want to login, the page hang. There where no signs of the request in the 
 After a few hours (sic) of hunting, i found that the issue is the default MTU assigned by wg-quick being too large.
 I tried a few MTU sizes and found that i had to lower it to 1403:"><meta itemprop="datePublished" content="2023-03-27T15:49:26+02:00" />
 <meta itemprop="dateModified" content="2023-03-27T15:49:26+02:00" />
-<meta itemprop="wordCount" content="134">
+<meta itemprop="wordCount" content="168">
 <meta itemprop="keywords" content="wireguard,sso,grist,authentik,linux," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Wireguard MTU on linux"/>
 <meta name="twitter:description" content="I encountered an issue with wireguard vpn &#43; grist &#43; authentik sso via SAML.
@@ -182,6 +182,10 @@ There where no signs of the request in the nginx servers log files nor in grist&
 </code></pre></div><p>With this change i could easily bring the vpn up and down via:</p>
 <pre tabindex="0"><code>wg-quick up wg0
 wg-quick down wg0
+</code></pre><p>edit:</p>
+<p>After an update i had to lower the mtu even more, idk what caused this, but changeing the MTU
+to 1400 solved it again.</p>
+<pre tabindex="0"><code>PostUp = /usr/bin/ip link set mtu 1400 dev %i
 </code></pre><ul class="pa0">
   
    <li class="list di">
