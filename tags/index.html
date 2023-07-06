@@ -130,6 +130,90 @@
     <section class="ph4">
       
         <h2 class="f1">
+          <a href="/tags/linux/" class="link blue hover-black">
+            Tag: linux
+          </a>
+        </h2>
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/create-linux-user-with-live-cd/" class="link black dim">
+        Create Linux User With Live CD
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Today i had to fix a linux laptop, that did not boot correctly, and where i did not know the password of.
+The graphical user interface did not came up because of a full ssd. This i did not know yet when i got the laptop. I figured that it would be easiest to login on the system to have easy access to journalctl etc.
+So i created a user from a live linux CD called GRML.
+    </div>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/wireguard-linux-shadowed-gateway/" class="link black dim">
+        Wireguard Linux Shadowed Endpoint
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I create wireguard configurations for ~120 users via a small nim application. Its easy and works beautifully on windows and macos with the official wireguard client for those platforms.
+The same config, does not work on linux.
+When enabled it basically broke my network.
+The issue was that i added a whole subnet to the AllowedIPs that also contained the endpoint&rsquo;s ip. Interestingly this worked on windows and macos but not on linux.
+    </div>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/wireguard-mtu-on-linux/" class="link black dim">
+        Wireguard MTU on linux
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I encountered an issue with wireguard vpn + grist + authentik sso via SAML.
+When i want to login, the page hang. There where no signs of the request in the nginx servers log files nor in grist&rsquo;s and authentik&rsquo;s log output.
+After a few hours (sic) of hunting, i found that the issue is the default MTU assigned by wg-quick being too large.
+I tried a few MTU sizes and found that i had to lower it to 1403:
+    </div>
+  </div>
+</div>
+
+        
+      
+        <h2 class="f1">
+          <a href="/tags/recovery/" class="link blue hover-black">
+            Tag: recovery
+          </a>
+        </h2>
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/create-linux-user-with-live-cd/" class="link black dim">
+        Create Linux User With Live CD
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Today i had to fix a linux laptop, that did not boot correctly, and where i did not know the password of.
+The graphical user interface did not came up because of a full ssd. This i did not know yet when i got the laptop. I figured that it would be easiest to login on the system to have easy access to journalctl etc.
+So i created a user from a live linux CD called GRML.
+    </div>
+  </div>
+</div>
+
+        
+      
+        <h2 class="f1">
           <a href="/tags/nim/" class="link blue hover-black">
             Tag: nim
           </a>
@@ -169,49 +253,6 @@
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Nimja is a compiled, type safe and fast templating engine written in Nim. It looks like python&rsquo;s jinja2 or PHP&rsquo;s twig, but in contrast to them, it is fully compiled and type safe, since it compiles down to Nim. All the heavy lifting is done on compile time, and the resulting binary contains idiomatic Nim that is very fast on runtime.
 # nimble install nimja import nimja proc renderStuff(): string = compileTemplateStr(&#34;&#34;&#34; {% extends partials/_master.
-    </div>
-  </div>
-</div>
-
-        
-      
-        <h2 class="f1">
-          <a href="/tags/linux/" class="link blue hover-black">
-            Tag: linux
-          </a>
-        </h2>
-        
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="/posts/wireguard-linux-shadowed-gateway/" class="link black dim">
-        Wireguard Linux Shadowed Endpoint
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I create wireguard configurations for ~120 users via a small nim application. Its easy and works beautifully on windows and macos with the official wireguard client for those platforms.
-The same config, does not work on linux.
-When enabled it basically broke my network.
-The issue was that i added a whole subnet to the AllowedIPs that also contained the endpoint&rsquo;s ip. Interestingly this worked on windows and macos but not on linux.
-    </div>
-  </div>
-</div>
-
-        
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="/posts/wireguard-mtu-on-linux/" class="link black dim">
-        Wireguard MTU on linux
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I encountered an issue with wireguard vpn + grist + authentik sso via SAML.
-When i want to login, the page hang. There where no signs of the request in the nginx servers log files nor in grist&rsquo;s and authentik&rsquo;s log output.
-After a few hours (sic) of hunting, i found that the issue is the default MTU assigned by wg-quick being too large.
-I tried a few MTU sizes and found that i had to lower it to 1403:
     </div>
   </div>
 </div>

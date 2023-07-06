@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Create Linux User With Live CD | blog.code0.xyz</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Today i had to fix a linux laptop, that did not boot correctly, and where i did not know the password of.
+The graphical user interface did not came up because of a full ssd. This i did not know yet when i got the laptop. I figured that it would be easiest to login on the system to have easy access to journalctl etc.
+So i created a user from a live linux CD called GRML.">
+    <meta name="generator" content="Hugo 0.92.2" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Create Linux User With Live CD" />
+<meta property="og:description" content="Today i had to fix a linux laptop, that did not boot correctly, and where i did not know the password of.
+The graphical user interface did not came up because of a full ssd. This i did not know yet when i got the laptop. I figured that it would be easiest to login on the system to have easy access to journalctl etc.
+So i created a user from a live linux CD called GRML." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.code0.xyz/posts/create-linux-user-with-live-cd/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-06T15:21:26+02:00" />
+<meta property="article:modified_time" content="2023-07-06T15:21:26+02:00" />
+
+<meta itemprop="name" content="Create Linux User With Live CD">
+<meta itemprop="description" content="Today i had to fix a linux laptop, that did not boot correctly, and where i did not know the password of.
+The graphical user interface did not came up because of a full ssd. This i did not know yet when i got the laptop. I figured that it would be easiest to login on the system to have easy access to journalctl etc.
+So i created a user from a live linux CD called GRML."><meta itemprop="datePublished" content="2023-07-06T15:21:26+02:00" />
+<meta itemprop="dateModified" content="2023-07-06T15:21:26+02:00" />
+<meta itemprop="wordCount" content="291">
+<meta itemprop="keywords" content="linux,recovery," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Create Linux User With Live CD"/>
+<meta name="twitter:description" content="Today i had to fix a linux laptop, that did not boot correctly, and where i did not know the password of.
+The graphical user interface did not came up because of a full ssd. This i did not know yet when i got the laptop. I figured that it would be easiest to login on the system to have easy access to journalctl etc.
+So i created a user from a live linux CD called GRML."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        blog.code0.xyz
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/gristwidgets/" title="GristWidgets page">
+              GristWidgets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+    
+    <a href="https://github.com/enthus1ast" target="_blank" rel="noopener" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Create Linux User With Live CD</h1>
+      
+      <p class="tracked">
+        By <strong>David Krause (enthus1ast)</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2023-07-06T15:21:26+02:00">July 6, 2023</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Today i had to fix a linux laptop, that did not boot correctly,
+and where i did not know the password of.</p>
+<p>The graphical user interface did not came up because of a full ssd.
+This i did not know yet when i got the laptop.
+I figured that it would be easiest to login on the system to have easy access to <code>journalctl</code> etc.</p>
+<p>So i created a user from a live linux CD called <a href="https://grml.org/">GRML</a>.
+But this works from most linux live distros.</p>
+<ol>
+<li>
+<p>Boot into a live cd, in my case i used GRML which i always carry around on a usb stick on my keychain.</p>
+</li>
+<li>
+<p>mount the root partition of the linux notebook</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir /mnt/sda1
+mount /dev/sda1 /mnt/sda1
+</code></pre></div><ol start="3">
+<li>Create a user (i chose: <code>admin</code>) on the livecd with:</li>
+</ol>
+<pre tabindex="0"><code>useradd admin
+</code></pre><ol start="4">
+<li>Set a password for user admin (still on the livecd)</li>
+</ol>
+<pre tabindex="0"><code>passwd admin
+</code></pre><ol start="5">
+<li>create the user on the target system</li>
+</ol>
+<p>step 3 and 4 will create an entry on the livecd&rsquo;s <code>/etc/passwd</code> and <code>/etc/shadow</code>,
+these entries we will change a little and copy to the other linux.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat /etc/passwd
+<span style="color:#75715e"># ...</span>
+admin:x:1001:1001::/home/admin:/bin/sh
+
+cat /etc/shadow
+<span style="color:#75715e"># ---</span>
+admin:$y$j9T$tHOGMhz52m.AciF0XasKc/$.XPZ8p0Jord0G.Z3bze8fAH/4GmmEWof3ZDnaEuI7b3:19544:0:99999:7:::
+</code></pre></div><p>we now append these lines to the to the system we wanna log in
+but we change the userid and group id of the newly created user to 0 (<code>0</code> is the root user) :</p>
+<pre tabindex="0"><code># here we changed 1001 to 0
+# and also changed the home dir `/home/admin/` to `/root`
+echo &quot;admin:x:0:0::/root:/bin/sh&quot; &gt;&gt; /mnt/sda1/passwd
+
+# this is user: `admin` password: `123`
+echo &quot;admin:$y$j9T$tHOGMhz52m.AciF0XasKc/$.XPZ8p0Jord0G.Z3bze8fAH/4GmmEWof3ZDnaEuI7b3:19544:0:99999:7:::&quot; &gt;&gt; /mnt/sda1/shadow
+</code></pre><ol start="6">
+<li>DONE Login on the target system</li>
+</ol>
+<p>Reboot into the other linux system, and login with the user and password you&rsquo;ve just created.</p>
+<p>If you copied the commands above, the logins are:</p>
+<pre tabindex="0"><code>Username: admin
+Password: 123 
+</code></pre><ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/linux/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">linux</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/recovery/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">recovery</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/posts/wireguard-linux-shadowed-gateway/">Wireguard Linux Shadowed Endpoint</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/wireguard-mtu-on-linux/">Wireguard MTU on linux</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://blog.code0.xyz/" >
+    &copy;  blog.code0.xyz 2023 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+    
+    <a href="https://github.com/enthus1ast" target="_blank" rel="noopener" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
